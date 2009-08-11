@@ -4,7 +4,7 @@ development:
   adapter: sqlite3
   database: log/development.sqlite3
   
-test:
+test: &TEST
   adapter: sqlite3
   database: log/test.sqlite3
   
