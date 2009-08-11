@@ -1,20 +1,12 @@
 <% PASSWORD_FILE = File.join(RAILS_ROOT, '..', '..', 'shared', 'config', 'dbpassword') %>
 
 development:
-  adapter: mysql
-  database: odyssey_development
-  username: root
-  password: 
-  host: localhost
-  encoding: utf8
+  adapter: sqlite3
+  database: log/development.sqlite3
   
-test: &TEST
-  adapter: mysql
-  database: odyssey_test
-  username: root
-  password: 
-  host: localhost
-  encoding: utf8
+test:
+  adapter: sqlite3
+  database: log/test.sqlite3
   
 staging:
   adapter: mysql
